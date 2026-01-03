@@ -43,8 +43,13 @@ return(
         </input>
         <input placeholder="Address" value="{form.Address}" onChange={e=>setForm({...form,Address:e.target.value})}>
         </input>
-        <select onchange={e=>setForm({...form,parkingLot:e.target.value})}></select>
+        <select onchange={e=>setForm({...form,parkingLot:e.target.value})}>
         <option value=""Parking></option>
-         <option value=""Parking></option>
+         <option value="true"Yes></option>
+         <option value="False"No></option>
+         </select>
+         <input value="{form.image}"
+         onChange={e=>setForm({...form,image: e.target.value})}/>
+         <button onClick={handleAdd}>Add</button>
     </div>
 )
