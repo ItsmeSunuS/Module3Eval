@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2> Customer dashboard</h2>
+    <input id="search" placeholder="Search by name or address"autofocus onkeyup="searchRestuarant()">
+    <select onchange="filterType(this.value)">
+        <option>Rajasthani</option>
+        <option>Gujarati</option>
+        <option>Kerala</option>
+        <option>Jain</option>
+        <option>TamilNadu</option>
+    </select>
+    <select onchange="filterParking(this.value)">
+        <option value="All Parking"></option>
+        <option value="true">Parking available</option>
+        <option value="false">No Parking</option>
+    </select>
+    <div id="cards"></div>
+    <script src="script.js"></script>
+    <script> loadCustomer();</script>
+</body>
+</html>

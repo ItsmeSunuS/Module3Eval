@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <h2> Admin Dashboard</h2>
+   <!-- // <script type="module" src="/src/main.jsx"></script> -->
+
+
+    <div class="sidebar">
+      <h3>Add Resturant</h3>
+      <input id="name"placeholder="Resturant name">
+      <input id="address" placeholder="Address">
+      <select id="type">
+        <option value=""Select Type></option>
+        <option>Rajasthani</option>
+        <option>Gujarati</option>
+        <option>Kerala</option>
+        <option>Jain</option>
+        <option>TamilNadu</option>
+      </select>
+      <select id="parking">
+        <option value="">Parking </option>
+        <option value="true">Yes</option>
+        <option value="false">No </option>
+      </select>
+      <input id="image" placeholder="" value="">
+      <button onclick="addRestaurant()"> Add</button>
+      </div>
+      <hr>
+      <div id="cards"></div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
